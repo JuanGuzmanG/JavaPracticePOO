@@ -19,8 +19,11 @@ public class Main {
 
         cu.setLado(2);
         System.out.println("area cuadrado: "+cu.calcularArea());
+        cu.dibujar();
         circulo cir = new circulo();
         cir.setRadio(2);
+        cir.rotar();
+        cir.dibujar();
         System.out.println("area del circulo: "+ cir.calcularArea());
     }
 }
