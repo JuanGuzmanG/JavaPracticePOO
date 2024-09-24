@@ -1,6 +1,6 @@
 package main;
 
-public class cuadrado extends figura{
+public class cuadrado implements figura, Dibujable{
     double  lado;
 
     public cuadrado() {
@@ -10,10 +10,12 @@ public class cuadrado extends figura{
         this.lado = lado;
     }
 
-    public cuadrado(double x, double y, double lado) {
+/*    public cuadrado(double x, double y, double lado) {
         super(x, y);
         this.lado = lado;
-    }
+    }*/
+
+
 
     @Override
     public double calcularArea() {
@@ -26,5 +28,10 @@ public class cuadrado extends figura{
 
     public void setLado(double lado) {
         this.lado = lado;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("estoy dibujando un cuadrado");
     }
 }
