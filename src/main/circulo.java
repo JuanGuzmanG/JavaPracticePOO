@@ -1,6 +1,6 @@
 package main;
 
-public class circulo implements figura, Dibujable {
+public class circulo implements figura, Dibujable,Rotable {
 
     private double radio;
 
@@ -17,6 +17,9 @@ public class circulo implements figura, Dibujable {
 
     public void dibujar(){
         System.out.println("Dibujando circulo");
+    }
+    public void rotar(){
+        System.out.println("Rotando circulo");
     }
 
     @Override
