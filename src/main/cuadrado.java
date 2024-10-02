@@ -34,4 +34,5 @@ public class cuadrado implements figura, Dibujable{
     public void dibujar() {
         System.out.println("estoy dibujando un cuadrado");
     }
+
 }
